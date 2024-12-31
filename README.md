@@ -9,3 +9,5 @@ Features
 - Configurable specification limits
 - Data export functionality
 - Sample data generation
+
+- Check out the App at :https://khiroquality.streamlit.app/
