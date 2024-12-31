@@ -62,7 +62,8 @@ def load_data(uploaded_file):
     return data
 
 def main():
-    st.title("Quality Engineering Analysis Dashboard")
+    # App title and description We can replace it with st.title 
+    st.markdown("<h1 style='font-size: 30px; text-align: center; color: black;'>Quality Engineering Analysis Dashboard</h1>", unsafe_allow_html=True)
     
     # File upload section
     st.sidebar.header("Data Input")
@@ -91,6 +92,7 @@ def main():
     
     # Display available columns
     numeric_columns = data.select_dtypes(include=[np.number]).columns
+    
     
     # Analysis parameters
     st.sidebar.header("Analysis Parameters")
@@ -140,7 +142,7 @@ def main():
     st.plotly_chart(fig_hist, use_container_width=True)
     
     # Raw Data Table
-    st.subheader("Raw Data Sample")
+    st.subheader("Raw Data Sample of 10 entries")
     st.dataframe(data.head(10))
     
     # Download processed data
