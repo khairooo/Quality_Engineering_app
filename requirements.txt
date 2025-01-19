@@ -4,3 +4,6 @@ numpy
 scipy
 plotly
 matplotlib
+
+openpyxl
+ollama
