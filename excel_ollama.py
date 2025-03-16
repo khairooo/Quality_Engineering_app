@@ -33,8 +33,8 @@ def ask_groq(question, data):
     print(f"Prompt sent to Groq: {prompt}")  # Debug
     
     # Groq API settings
-    GROQ_API_KEY = st.secrets["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"]
-    GROQ_API_URL = "https://huggingface.co/meta-llama/Llama-Guard-3-8B"  # Example endpoint, check Groq docs for the correct one
+    GROQ_API_KEY = st.secrets["APIKEY"]
+    GROQ_API_URL = "API_key"  # Example endpoint, check Groq docs for the correct one
     
     # Prepare the request payload
     headers = {
